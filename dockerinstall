@@ -1,0 +1,2 @@
+sh get-docker.sh
+docker-run helloworld 
