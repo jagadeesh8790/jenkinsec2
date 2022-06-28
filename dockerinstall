@@ -1,2 +1,2 @@
 sh get-docker.sh
-docker-run helloworld 
+sh docker-run helloworld 
