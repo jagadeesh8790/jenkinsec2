@@ -1,2 +1,16 @@
-sh get-docker.sh
-sh docker-run helloworld 
+#!groovy
+pipeline {
+    agent none
+   stages {     
+    stage('Docker Install') {
+      agent {         
+       docker {          
+         image 'Docker:20.10.14'         
+     }       
+  }       
+  steps {
+       sh 'docker --version
+       }
+     }
+   }
+ }
